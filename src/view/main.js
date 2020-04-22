@@ -37,7 +37,6 @@ function Main() {
 		$('#confirmed-value').html(`${formatNum(data.confirmed)} people`);
 		$('#recovered-value').html(`${formatNum(data.recovered)} people`);
 		$('#deaths-value').html(`${formatNum(data.deaths)} people`);
-		console.log(data);
 	};
 
 	const renderAllCountryData = () => {
