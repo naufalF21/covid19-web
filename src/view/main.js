@@ -7,6 +7,7 @@ function Main() {
 	};
 
 	const formatNum = (num) => new Intl.NumberFormat().format(num);
+
 	const options = {
 		header: {
 			'Access-Control-Allow-Headers': 'Authorization, Content-Type',
@@ -36,6 +37,7 @@ function Main() {
 		$('#confirmed-value').html(`${formatNum(data.confirmed)} people`);
 		$('#recovered-value').html(`${formatNum(data.recovered)} people`);
 		$('#deaths-value').html(`${formatNum(data.deaths)} people`);
+		console.log(data);
 	};
 
 	const renderAllCountryData = () => {

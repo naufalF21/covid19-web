@@ -15,6 +15,13 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
 #header-content h5,
 .navbar-brand {
 	word-spacing: 4px;
@@ -50,11 +57,19 @@ body {
 #card-wrapper .card {
 	width: 18vw;
 	margin-top: 1rem;
+	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .3)
 }
 
 #card-table {
 	height: 60vh;
 	overflow: auto;
+}
+
+#card-table .card-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #card-table table thead th {
@@ -84,9 +99,13 @@ small i {
 		width: 100vw;
 	}
 
+	.jumbotron {
+		align-items: center;
+	}
+
 	#nav-list {
-	margin: 0;
-}
+		margin: 0;
+	}
 
 	#main-content {
 		padding: 0;
@@ -107,12 +126,17 @@ small i {
 	}
 
 	#card-wrapper .card {
-	width: 100vw;
-}
+		width: 30vw;
+	}
 
 }
 
 @media (max-width: 425px) {
+	#header-content {
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
 	#nav-list .navbar-brand {
 		margin-right: 4rem;
 	}
@@ -123,6 +147,6 @@ small i {
 	}
 
 	#card-wrapper .card {
-		width: 84vw;
+		width: 80vw;
 	}
 }

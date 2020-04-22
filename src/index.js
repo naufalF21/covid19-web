@@ -1,5 +1,7 @@
 import './styles/styles.css';
 import './components/app-bar';
+import './components/card-list';
+import './components/footer-bar';
 import Main from './view/main';
 
 const displayTime = () => {
