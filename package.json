@@ -1,30 +1,34 @@
 {
-    "name": "websub-frontend",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-        "build": "webpack --mode production",
-        "start-dev": "webpack-dev-server --open --mode development"
-    },
-    "author": "naufal_firman <naufalfirman098@gmail.com>",
-    "license": "ISC",
-    "dependencies": {
-        "regenerator-runtime": "^0.13.5"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.9.0",
-        "@babel/preset-env": "^7.9.5",
-        "babel-loader": "^8.1.0",
-        "css-loader": "^3.5.2",
-        "file-loader": "^6.0.0",
-        "html-loader": "^1.1.0",
-        "html-webpack-plugin": "^4.2.0",
-        "style-loader": "^1.1.3",
-        "to-string-loader": "^1.1.6",
-        "webpack": "^4.42.1",
-        "webpack-cli": "^3.3.11",
-        "webpack-dev-server": "^3.10.3"
-    },
-    "keywords": [],
-    "description": ""
+   "name": "websub-frontend",
+   "version": "1.0.0",
+   "main": "index.js",
+   "homepage": "https://github.com/naufalF21/websub-dicoding-fe",
+   "scripts": {
+      "build": "webpack --mode production",
+      "start-dev": "webpack-dev-server --open --mode development",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+   },
+   "author": "naufal_firman <naufalfirman098@gmail.com>",
+   "license": "ISC",
+   "dependencies": {
+      "regenerator-runtime": "^0.13.5"
+   },
+   "devDependencies": {
+      "@babel/core": "^7.9.0",
+      "@babel/preset-env": "^7.9.5",
+      "babel-loader": "^8.1.0",
+      "css-loader": "^3.5.2",
+      "file-loader": "^6.0.0",
+      "gh-pages": "^2.2.0",
+      "html-loader": "^1.1.0",
+      "html-webpack-plugin": "^4.2.0",
+      "style-loader": "^1.1.3",
+      "to-string-loader": "^1.1.6",
+      "webpack": "^4.42.1",
+      "webpack-cli": "^3.3.11",
+      "webpack-dev-server": "^3.10.3"
+   },
+   "keywords": [],
+   "description": ""
 }
