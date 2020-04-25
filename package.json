@@ -2,7 +2,7 @@
    "name": "covid19",
    "version": "1.0.0",
    "main": "index.js",
-   "homepage": "https://github.com/naufalF21/covid19-web",
+   "homepage": "https://naufalf21.github.io/covid19-web/",
    "scripts": {
       "build": "webpack --mode production",
       "start-dev": "webpack-dev-server --open --mode development",
